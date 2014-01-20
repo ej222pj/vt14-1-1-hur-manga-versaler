@@ -31,22 +31,13 @@ namespace Hur_många_versaler {
         protected global::System.Web.UI.WebControls.TextBox Text;
         
         /// <summary>
-        /// Submit control.
+        /// Button control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Submit;
-        
-        /// <summary>
-        /// Reset control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Reset;
+        protected global::System.Web.UI.WebControls.Button Button;
         
         /// <summary>
         /// Result control.

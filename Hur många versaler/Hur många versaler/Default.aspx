@@ -9,9 +9,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:TextBox ID="Text" runat="server" Height="158px" Width="379px"></asp:TextBox>
-        <asp:Button ID="Submit" runat="server" Text="Submit" OnClick="Button1_Click" />
-        <asp:Button ID="Reset" runat="server" Text="Reset" OnClick="Button1_Click1" />
+        <asp:TextBox ID="Text" runat="server" Height="200px" Width="400px" TextMode="MultiLine" autofocus="true"></asp:TextBox>
+        <asp:Button ID="Button" runat="server" Text="Submit" OnClick="Button1_Click" />
         <p>
         <asp:Label ID="Result" runat="server" Text=""></asp:Label>
         </p>

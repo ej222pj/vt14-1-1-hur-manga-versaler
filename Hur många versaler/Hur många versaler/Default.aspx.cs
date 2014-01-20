@@ -11,26 +11,25 @@ namespace Hur_många_versaler
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Reset.Visible = false;
+            Button.Text = "Submit";
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
-            Result.Text = "Texten inehåller " + Model.TextAnalyzer.GetNumberOfCapitals(Text.Text).ToString() + " versaler";
-            Text.Enabled = false;
-            Submit.Visible = false;
-            Reset.Visible = true;
+            if(Text.Enabled == false)
+            {
+                Result.Text = "";
+                Text.Text = "";
+                Text.Enabled = true;
+                Button.Text = "Submit";
+            }
+            else
+            {
+                Result.Text = "Texten inehåller " + Model.TextAnalyzer.GetNumberOfCapitals(Text.Text).ToString() + " versaler";
+                Text.Enabled = false;
+                Button.Text = "Reset";
+            }
+            
         }
-
-        protected void Button1_Click1(object sender, EventArgs e)
-        {
-            Result.Text = "";
-            Text.Text = "";
-            Text.Enabled = true;
-            Submit.Visible = true;
-
-        }
-
     }
 }
