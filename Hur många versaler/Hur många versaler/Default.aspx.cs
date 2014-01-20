@@ -17,7 +17,7 @@ namespace Hur_många_versaler
         protected void Button1_Click(object sender, EventArgs e)
         {
 
-            Result.Text = "Antalet versaler är: " + Model.TextAnalyzer.GetNumberOfCapitals(Text.Text).ToString();
+            Result.Text = "Texten inehåller " + Model.TextAnalyzer.GetNumberOfCapitals(Text.Text).ToString() + " versaler";
             Text.Enabled = false;
             Submit.Visible = false;
             Reset.Visible = true;
