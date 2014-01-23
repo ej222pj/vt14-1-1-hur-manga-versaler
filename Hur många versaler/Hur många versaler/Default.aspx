@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Hur_många_versaler.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Hur_många_versaler.Default" ViewStateMode="Disabled" %>
 
 <!DOCTYPE html>
 
@@ -9,13 +9,15 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:TextBox ID="Text" runat="server" Height="200px" Width="400px" TextMode="MultiLine" autofocus="true" CssClass="textbox"></asp:TextBox>
-        <asp:Button ID="Button" runat="server" Text="Submit" OnClick="Button1_Click" />
-        <p>
-        <asp:Label ID="Result" runat="server" Text=""></asp:Label>
-        </p>
-    </div>
+        <div>
+            <asp:TextBox ID="Text" runat="server" Height="200px" Width="400px" TextMode="MultiLine" autofocus="autofocus" CssClass="textbox" ViewStateMode="Enabled"></asp:TextBox>
+            <asp:Button ID="Button" runat="server" Text="Submit" OnClick="Button1_Click" />
+            <asp:PlaceHolder ID="PlaceHolder1" runat="server" Visible="false">
+                <p>
+                    <asp:Label ID="Result" runat="server" Text=""></asp:Label>
+                </p>
+            </asp:PlaceHolder>
+        </div>
     </form>
 </body>
 </html>

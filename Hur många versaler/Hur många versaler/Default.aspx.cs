@@ -28,6 +28,7 @@ namespace Hur_många_versaler
                 Result.Text = "Texten inehåller " + Model.TextAnalyzer.GetNumberOfCapitals(Text.Text).ToString() + " versaler";
                 Text.Enabled = false;
                 Button.Text = "Reset";
+                PlaceHolder1.Visible = true;
             }
             
         }
